@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title" >This is page </h1>
+    <script>
+        document.write("jdgfvusdyf ufyg uv if yaudf ")
+    </script>
+    <h1 id="desc">this is data desc</h1>
+    <button onclick="changecontent()">Please click it</button>
+    <script>
+        const changecontent=()=>{
+            document.getElementById('title').innerHTML='This is change data by button';
+            document.getElementById('title').style.cssText='color:red;font-size:60px;';
+            document.getElementById('desc').innerHTML='This is the new Desc by the button';
+        }
+    </script>
+</body>
+</html>
