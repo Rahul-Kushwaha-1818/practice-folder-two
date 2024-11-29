@@ -12,6 +12,26 @@
     </script>
     <h1 id="desc">this is data desc</h1>
     <button onclick="changecontent()">Please click it</button>
+
+
+    <h1 id="myH"></h1>
+<p id="myP"></p>
+<button onclick="changeData()">chnage data</button>
+<button onclick="changeOther()">Chnage Other Data </button>
+
+<script>
+// Change heading:
+document.getElementById("myH").innerHTML = "JavaScript Comments";
+// Change paragraph:
+document.getElementById("myP").innerHTML = "My first paragraph.";
+function changeData(){
+document.getElementById("myH").innerHTML="This is new Data..";
+}
+
+const changeOther=()=>{
+   document.getElementById("myP").innerHTML="This is New Peragraph";
+}
+</script>
     <script>
         const changecontent=()=>{
             document.getElementById('title').innerHTML='This is change data by button';
@@ -19,5 +39,26 @@
             document.getElementById('desc').innerHTML='This is the new Desc by the button';
         }
     </script>
+
+
+
+<h1>JavaScript Variables</h1>
+
+<p>In this example, price1, price2, and total are variables.</p>
+
+<p id="demo"></p>
+
+<script>
+const price1 = 5;
+const price2 = 6;
+let total = price1 + price2;
+var name ="data1"
+name="newdata"
+const nextname="newnamwe"
+// nextname="newNextName"  this gives the error becouse we can't change the value of const variavble 
+document.getElementById("demo").innerHTML =
+"The total is: " + total+" ////  " +name +" ////  " + nextname;
+</script>
+
 </body>
 </html>
